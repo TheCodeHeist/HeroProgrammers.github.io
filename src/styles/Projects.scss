@@ -1,0 +1,61 @@
+.projects {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+
+  article.projects-viewer {
+    padding: 120px 40px;
+    min-height: 100vh;
+    background-color: #474986;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    table.projects-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      color: #fff;
+      font-size: 24px;
+      //   text-align: center;
+      margin-top: 20px;
+
+      thead {
+        background-color: #222;
+
+        tr {
+          border-bottom: 5px solid #fff;
+
+          th {
+            padding: 20px;
+            border: 1px solid #fff;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          background-color: #222;
+          border-bottom: 1px solid #fff;
+
+          td {
+            padding: 20px;
+            border: 1px solid #fff;
+          }
+
+          td.project-name {
+            a {
+              color: #fff;
+              text-decoration: none;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

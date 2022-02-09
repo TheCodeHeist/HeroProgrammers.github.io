@@ -1,0 +1,62 @@
+.projects {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.projects article.projects-viewer {
+  padding: 120px 40px;
+  min-height: 100vh;
+  background-color: #474986;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.projects article.projects-viewer table.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.projects article.projects-viewer table.projects-table thead {
+  background-color: #222;
+}
+
+.projects article.projects-viewer table.projects-table thead tr {
+  border-bottom: 5px solid #fff;
+}
+
+.projects article.projects-viewer table.projects-table thead tr th {
+  padding: 20px;
+  border: 1px solid #fff;
+}
+
+.projects article.projects-viewer table.projects-table tbody tr {
+  background-color: #222;
+  border-bottom: 1px solid #fff;
+}
+
+.projects article.projects-viewer table.projects-table tbody tr td {
+  padding: 20px;
+  border: 1px solid #fff;
+}
+
+.projects article.projects-viewer table.projects-table tbody tr td.project-name a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Projects.css.map */
