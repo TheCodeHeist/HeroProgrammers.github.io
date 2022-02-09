@@ -1,8 +1,14 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Members from './pages/Members';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello, Heros!</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} index />
+      <Route path="/members" element={<Members />} />
+      <Route path="/projects" element={<Home />} />
+    </Routes>
   );
 }
 

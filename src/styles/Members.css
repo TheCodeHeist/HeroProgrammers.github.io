@@ -1,0 +1,102 @@
+.members {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.members article.members-viewer {
+  padding: 80px 20px;
+  min-height: 100vh;
+  background-color: #474986;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.members article.members-viewer .member-card {
+  width: 300px;
+  height: 432px;
+  margin: 20px;
+  border-radius: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #222;
+  border: 1px solid #222;
+  color: #fff;
+}
+
+.members article.members-viewer .member-card img.member-avatar {
+  width: 10rem;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.members article.members-viewer .member-card .member-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.members article.members-viewer .member-card .member-info p.member-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.members article.members-viewer .member-card .member-info p.member-login .member-name {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.members article.members-viewer .member-card .member-info p.member-login .member-type {
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=Members.css.map */
