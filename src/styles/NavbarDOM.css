@@ -13,7 +13,19 @@ nav {
   position: fixed;
 }
 
-nav .navbar-header {
+nav .top {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .top .navbar-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,17 +34,40 @@ nav .navbar-header {
           align-items: center;
 }
 
-nav .navbar-header img.logo {
+nav .top .navbar-header img.logo {
   width: 64px;
   height: auto;
 }
 
-nav .navbar-header a.navbar-brand {
+nav .top .navbar-header a.navbar-brand {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
   margin-left: 26px;
+}
+
+nav .top .navbar-toggler {
+  border: 1px solid #fff;
+  outline: none;
+  background-color: #474b9c;
+  color: #fff;
+  font-size: 24px;
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+nav .navbar-navigation {
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
 }
 
 nav .navbar-navigation a.nav-link {
@@ -45,5 +80,45 @@ nav .navbar-navigation a.nav-link {
 
 nav .navbar-navigation a.link-active {
   font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  nav .top {
+    width: 100%;
+    height: 96px;
+  }
+  nav .top .navbar-toggler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .navbar-navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 0;
+    overflow: hidden;
+  }
+  nav .navbar-navigation.nav-active {
+    height: 10rem;
+  }
 }
 /*# sourceMappingURL=NavbarDOM.css.map */
