@@ -26,7 +26,14 @@ function Members() {
 
       <article className="members-viewer">
         {memberData.map((member) => (
-          <a href={member.html_url} target="_blank" rel="noopener noreferrer">
+          <a
+            href={member.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              textDecoration: "none",
+            }}
+          >
             <div className="member-card" key={member.id}>
               <img
                 src={member.avatar_url}
