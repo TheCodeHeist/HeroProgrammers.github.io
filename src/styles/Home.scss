@@ -1,6 +1,7 @@
 .home {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
   background-image: linear-gradient(
@@ -31,12 +32,13 @@
   }
 
   article.hero-1 {
-    height: 560px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #101231;
+    padding: 2rem 0;
 
     .cards {
       width: 420px;
@@ -50,6 +52,8 @@
       justify-content: center;
       align-items: center;
       background-color: #fff;
+      padding: 1rem 1.5rem;
+      margin: 20px;
     }
 
     .card-1 {
@@ -58,10 +62,60 @@
 
     .card-2 {
       background: linear-gradient(136.61deg, #e796b4 0%, #eb3971 100%);
+
+      figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        p {
+          margin: 20px 0;
+          font-size: 40px;
+          font-weight: bold;
+          color: #000;
+        }
+
+        figcaption {
+          height: 90%;
+          flex: 2;
+          font-size: 20px;
+          font-weight: normal;
+          color: #000;
+        }
+      }
     }
 
     .card-3 {
       background: linear-gradient(136.61deg, #f8ce4b 0%, #f3ad4b 100%);
+
+      figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        p {
+          margin: 20px 0;
+          font-size: 40px;
+          font-weight: bold;
+          color: #000;
+        }
+
+        figcaption {
+          height: 90%;
+          flex: 2;
+          font-size: 20px;
+          font-weight: normal;
+          color: #000;
+        }
+      }
     }
   }
 }

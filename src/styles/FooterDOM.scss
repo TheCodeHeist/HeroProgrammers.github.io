@@ -1,0 +1,36 @@
+footer {
+  height: 10rem;
+  background-color: #0d0e22;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 2rem;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #101231;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: #101231 2px solid;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      border: #fff 2px solid;
+      background-color: #101231;
+      color: #fff;
+      box-shadow: #fff 0 0 20px 2px;
+    }
+  }
+}

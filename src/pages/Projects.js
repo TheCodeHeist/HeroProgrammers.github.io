@@ -4,6 +4,7 @@ import "../styles/Projects.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { Octokit } from "octokit";
+import FooterDOM from "./../components/FooterDOM";
 
 function Projects() {
   const [repoData, setRepoData] = React.useState([]);
@@ -55,6 +56,8 @@ function Projects() {
           </tbody>
         </table>
       </article>
+
+      <FooterDOM />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import NavbarDOM from "./../components/NavbarDOM";
 import "../styles/Members.css";
 import { Octokit } from "octokit";
+import FooterDOM from './../components/FooterDOM';
 
 function Members() {
   const [memberData, setMemberData] = React.useState([]);
@@ -50,6 +51,8 @@ function Members() {
           </a>
         ))}
       </article>
+
+      <FooterDOM />
     </div>
   );
 }

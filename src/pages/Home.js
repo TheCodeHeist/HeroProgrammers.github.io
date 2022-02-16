@@ -1,5 +1,6 @@
 import React from "react";
 import NavbarDOM from "./../components/NavbarDOM";
+import FooterDOM from "./../components/FooterDOM";
 import "./../styles/Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
@@ -56,9 +57,35 @@ function Home() {
             <span id="repositories_holder">{repoCount}</span>
           </p>
         </div>
-        <div className="cards card-2"></div>
-        <div className="cards card-3"></div>
+        <div className="cards card-2">
+          <figure>
+            <p>Our Motive</p>
+            <figcaption>
+              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+              ex esse exercitation amet. Nisi animcupidatat excepteur officia.
+              Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
+              voluptate voluptate dolor minim nulla est proident. Nostrud
+              officia pariatur ut officia.
+            </figcaption>
+          </figure>
+        </div>
+        <div className="cards card-3">
+          <figure>
+            <p>Our Future Resolutions</p>
+            <figcaption>
+              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+              ex esse exercitation amet. Nisi animcupidatat excepteur officia.
+              Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
+              voluptate voluptate dolor minim nulla est proident. Nostrud
+              officia pariatur ut officia.
+            </figcaption>
+          </figure>
+        </div>
       </article>
+
+      <FooterDOM />
     </div>
   );
 }
