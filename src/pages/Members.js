@@ -26,19 +26,21 @@ function Members() {
 
       <article className="members-viewer">
         {memberData.map((member) => (
-          <div className="member-card" key={member.id}>
-            <img
-              src={member.avatar_url}
-              alt={member.login}
-              className="member-avatar"
-            />
-            <div className="member-info">
-              <p className="member-login">
-                <span className="member-name">{member.login}</span>
-                <span className="member-type">{member.type}</span>
-              </p>
+          <a href={member.html_url} target="_blank" rel="noopener noreferrer">
+            <div className="member-card" key={member.id}>
+              <img
+                src={member.avatar_url}
+                alt={member.login}
+                className="member-avatar"
+              />
+              <div className="member-info">
+                <p className="member-login">
+                  <span className="member-name">{member.login}</span>
+                  <span className="member-type">{member.type}</span>
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         ))}
       </article>
     </div>
